@@ -1,33 +1,31 @@
 # Quantum Machine Learning for Credit Card Fraud Detection
+final product video walkthrough: https://www.youtube.com/watch?v=TSL_RbNKyI8&ab_channel=ryanWang
 
 ## Overview
 
-This project explores the use of **Quantum Machine Learning (QML)** techniques for binary credit card fraud detection. Specifically, we compare classical classifiers such as Logistic Regression and SVM with quantum models like **Variational Quantum Classifiers (VQC)**. Our goal is to evaluate whether QML approaches offer meaningful performance benefits in fraud detection scenarios.
+This project compares classical models (Logistic Regression, SVM) with quantum approaches, particularly the **Variational Quantum Classifier (VQC)**, for binary fraud detection. We aim to evaluate whether quantum models can match or exceed classical performance on realistic financial data.
 
-## Project Goals
+## Goals
 
-- Train and evaluate classical and quantum classifiers on a realistic fraud detection dataset.
-- Analyze model performance using **recall**, **F1-score**, **AUPRC**, and **confusion matrices**.
-- Assess practical aspects of QML, including training time, circuit depth, and scalability.
+- Train classical and quantum classifiers on real-world data.
+- Evaluate using **recall**, **F1-score**, and **AUPRC**.
+- Analyze quantum-specific constraints like circuit depth and qubit limits.
 
 ## Dataset
 
-We use the **Credit Card Fraud Detection dataset** from Kaggle, which includes:
+We use the [Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) from Kaggle, containing:
 
-- 284,807 transactions over a two-day period.
-- 492 fraud cases (0.172%).
-- Features: 
-  - `Time`, `Amount`
-  - `V1` to `V28` (PCA-transformed for confidentiality)
-  - `Class` (1 = Fraud, 0 = Legitimate)
+- 284,807 transactions (492 fraud)
+- Features: `Time`, `Amount`, `V1`–`V28` (PCA), and `Class` (1 = fraud)
 
-### How to Get the Dataset
+### 📥 Download Instructions
 
-1. Go to the [Kaggle dataset page](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
-2. Click **"Download"** (you must be logged in).
-3. Extract the downloaded `creditcard.csv` file.
-4. Place it in your project directory.
+1. Sign in at Kaggle and go to the [dataset page](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
+2. Click **Download**, unzip it, and place `creditcard.csv` in your project folder.
 
-> You may also use the Kaggle API if you're running this in a notebook or server:
+**Alternatively (via Kaggle API):**
 ```bash
 pip install kaggle
+kaggle datasets download -d mlg-ulb/creditcardfraud
+unzip creditcardfraud.zip
+
