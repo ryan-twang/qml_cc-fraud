@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores the use of **Quantum Machine Learning (QML)** techniques for binary credit card fraud detection. Specifically, we compare classical classifiers such as Logistic Regression and SVM with quantum models like **Quantum Support Vector Machines (QSVM)** and **Variational Quantum Classifiers (VQC)**. Our goal is to evaluate whether QML approaches offer meaningful performance benefits in fraud detection scenarios.
+This project explores the use of **Quantum Machine Learning (QML)** techniques for binary credit card fraud detection. Specifically, we compare classical classifiers such as Logistic Regression and SVM with quantum models like **Variational Quantum Classifiers (VQC)**. Our goal is to evaluate whether QML approaches offer meaningful performance benefits in fraud detection scenarios.
 
 ## Project Goals
 
