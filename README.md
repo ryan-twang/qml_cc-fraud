@@ -21,7 +21,7 @@ We use the **Credit Card Fraud Detection dataset** from Kaggle, which includes:
   - `V1` to `V28` (PCA-transformed for confidentiality)
   - `Class` (1 = Fraud, 0 = Legitimate)
 
-### 🔽 How to Get the Dataset
+### How to Get the Dataset
 
 1. Go to the [Kaggle dataset page](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 2. Click **"Download"** (you must be logged in).
